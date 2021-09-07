@@ -14,7 +14,7 @@ const inputdata=()=>{
       document.getElementById('ErrorhandlingEmptyInput').style.display='none';
     }
     inputField.value='';
-    const url=`http://openlibrary.org/search.json?q=${inputElement}`;
+    const url=`https://openlibrary.org/search.json?q=${inputElement}`;
     fetch(url)
     .then(res=>res.json())
     .then(data=>displayData(data))
